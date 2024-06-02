@@ -1,0 +1,20 @@
+{
+    "manifest_version":3,
+    "name":"Plagiarism Remover",
+    "icons":{
+        "128":"p128.png",
+        "48":"p48.png",
+        "16":"p16.png"        
+    },
+    "version" : "1.0.0",
+    "action":{
+        "default_popup":"index.html"
+    },
+    "permissions":[
+        "scripting"
+    ],
+    "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+    ]
+}
