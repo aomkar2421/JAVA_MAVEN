@@ -1,12 +1,22 @@
 // import {} from 'react'
-import './index.css'
-import './App.css'
-import loadersvg from './assets/dualring.svg'
+import "./index.css";
+import "./App.css";
+import { ThreeCircles } from "react-loader-spinner";
 
 const Loader = () => {
   return (
-      <div><img src={loadersvg} className='h-16 w-16 mx-auto text-black' alt="" /></div>
-  )
-}
+    <div className="w-full flex justify-center my-3">
+      <ThreeCircles
+        visible={true}
+        height="40"
+        width="40"
+        color="black"
+        ariaLabel="three-circles-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+    </div>
+  );
+};
 
-export default Loader
+export default Loader;
